@@ -1,0 +1,38 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tenacity Capital">
+  <defs>
+    <linearGradient id="tn-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#10160f"/>
+      <stop offset="1" stop-color="#080b07"/>
+    </linearGradient>
+    <radialGradient id="tn-glow" cx="0.78" cy="0.22" r="0.8">
+      <stop offset="0" stop-color="#9cb89b" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#9cb89b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="tn-bar" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#3c5340"/>
+      <stop offset="1" stop-color="#9cb89b"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#tn-bg)"/>
+  <rect width="800" height="500" fill="url(#tn-glow)"/>
+
+  <!-- compounding: bars that refuse to quit -->
+  <g>
+    <rect x="96"  y="356" width="34" height="64"  rx="6" fill="#2a3a2c"/>
+    <rect x="170" y="332" width="34" height="88"  rx="6" fill="#2f4233"/>
+    <rect x="244" y="344" width="34" height="76"  rx="6" fill="#2a3a2c"/>
+    <rect x="318" y="296" width="34" height="124" rx="6" fill="#37503c"/>
+    <rect x="392" y="260" width="34" height="160" rx="6" fill="#406048"/>
+    <rect x="466" y="282" width="34" height="138" rx="6" fill="#37503c"/>
+    <rect x="540" y="196" width="34" height="224" rx="6" fill="#4d7a58"/>
+    <rect x="614" y="120" width="34" height="300" rx="6" fill="url(#tn-bar)"/>
+  </g>
+
+  <!-- summit marker -->
+  <circle cx="631" cy="104" r="9" fill="#9cb89b" fill-opacity="0.25"/>
+  <circle cx="631" cy="104" r="4" fill="#c9dbc8"/>
+
+  <!-- baseline -->
+  <line x1="60" y1="420" x2="740" y2="420" stroke="#9cb89b" stroke-opacity="0.22" stroke-width="1.5"/>
+</svg>

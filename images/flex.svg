@@ -1,0 +1,20 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Flex">
+  <defs>
+    <linearGradient id="fx-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f4efe7"/>
+      <stop offset="1" stop-color="#eae3d6"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#fx-bg)"/>
+
+  <!-- human-centered: soft organic forms, no hard finance edges -->
+  <path d="M520 60 C 660 40 760 140 740 250 C 722 352 600 380 520 330 C 442 282 400 196 444 130 C 466 96 488 66 520 60 Z" fill="#e0704a" fill-opacity="0.88"/>
+  <path d="M170 200 C 260 170 330 230 320 310 C 312 382 230 422 160 396 C 92 371 70 290 104 240 C 122 214 140 210 170 200 Z" fill="#d9a13d" fill-opacity="0.75"/>
+  <circle cx="420" cy="370" r="58" fill="#7d6753" fill-opacity="0.8"/>
+
+  <!-- a flexible thread weaving the shapes together -->
+  <path d="M120 120 C 240 60 420 150 470 230 C 522 314 640 330 700 290" fill="none" stroke="#3f3528" stroke-opacity="0.5" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="120" cy="120" r="6" fill="#3f3528" fill-opacity="0.6"/>
+  <circle cx="700" cy="290" r="6" fill="#3f3528" fill-opacity="0.6"/>
+</svg>

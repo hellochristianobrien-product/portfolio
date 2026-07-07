@@ -1,0 +1,34 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rotary International and USAID">
+  <defs>
+    <linearGradient id="ru-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#123a7a"/>
+      <stop offset="1" stop-color="#081c3d"/>
+    </linearGradient>
+    <radialGradient id="ru-glow" cx="0.5" cy="0.4" r="0.85">
+      <stop offset="0" stop-color="#f7a81b" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#f7a81b" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#ru-bg)"/>
+  <rect width="800" height="500" fill="url(#ru-glow)"/>
+
+  <!-- partnership: two circles, one overlap -->
+  <g fill="none" stroke-width="3">
+    <circle cx="340" cy="235" r="110" stroke="#f7a81b" stroke-opacity="0.85"/>
+    <circle cx="460" cy="235" r="110" stroke="#cfe0f8" stroke-opacity="0.75"/>
+  </g>
+
+  <!-- the shared work where they meet -->
+  <g fill="#f7a81b">
+    <circle cx="400" cy="200" r="7"/>
+    <circle cx="400" cy="270" r="7" fill="#cfe0f8"/>
+    <circle cx="400" cy="235" r="9" fill="#ffffff"/>
+  </g>
+
+  <!-- impact: ripples reaching outward -->
+  <g fill="none" stroke="#cfe0f8" stroke-linecap="round">
+    <path d="M150 392 q 125 -26 250 0 t 250 0" stroke-opacity="0.35" stroke-width="2"/>
+    <path d="M190 416 q 105 -20 210 0 t 210 0" stroke-opacity="0.2" stroke-width="2"/>
+  </g>
+</svg>

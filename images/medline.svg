@@ -1,0 +1,37 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Medline">
+  <defs>
+    <linearGradient id="md-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1f33"/>
+      <stop offset="1" stop-color="#051221"/>
+    </linearGradient>
+    <radialGradient id="md-glow" cx="0.5" cy="0.35" r="0.8">
+      <stop offset="0" stop-color="#1a8cff" stop-opacity="0.20"/>
+      <stop offset="1" stop-color="#1a8cff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#md-bg)"/>
+  <rect width="800" height="500" fill="url(#md-glow)"/>
+
+  <!-- care at scale: a field of plus marks, the supply network -->
+  <g fill="#7db8e8">
+    <path d="M150 110 h14 v22 h22 v14 h-22 v22 h-14 v-22 h-22 v-14 h22 Z" fill-opacity="0.25"/>
+    <path d="M320 86 h14 v22 h22 v14 h-22 v22 h-14 v-22 h-22 v-14 h22 Z" fill-opacity="0.35"/>
+    <path d="M500 120 h14 v22 h22 v14 h-22 v22 h-14 v-22 h-22 v-14 h22 Z" fill-opacity="0.3"/>
+    <path d="M652 96 h14 v22 h22 v14 h-22 v22 h-14 v-22 h-22 v-14 h22 Z" fill-opacity="0.22"/>
+    <path d="M230 280 h14 v22 h22 v14 h-22 v22 h-14 v-22 h-22 v-14 h22 Z" fill-opacity="0.3"/>
+    <path d="M580 300 h14 v22 h22 v14 h-22 v22 h-14 v-22 h-22 v-14 h22 Z" fill-opacity="0.35"/>
+    <path d="M120 360 h14 v22 h22 v14 h-22 v22 h-14 v-22 h-22 v-14 h22 Z" fill-opacity="0.2"/>
+  </g>
+
+  <!-- the anchor plus: care delivered home -->
+  <path d="M380 220 h40 v60 h60 v40 h-60 v60 h-40 v-60 h-60 v-40 h60 Z" fill="#1a8cff"/>
+
+  <!-- connections between points of care -->
+  <g stroke="#7db8e8" stroke-opacity="0.22" stroke-width="1.5">
+    <line x1="338" y1="124" x2="400" y2="240"/>
+    <line x1="518" y1="158" x2="430" y2="250"/>
+    <line x1="248" y1="318" x2="350" y2="290"/>
+    <line x1="598" y1="338" x2="470" y2="300"/>
+  </g>
+</svg>

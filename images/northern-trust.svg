@@ -1,0 +1,50 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Northern Trust">
+  <defs>
+    <linearGradient id="nt-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#10493a"/>
+      <stop offset="1" stop-color="#082821"/>
+    </linearGradient>
+    <radialGradient id="nt-glow" cx="0.5" cy="0.25" r="0.8">
+      <stop offset="0" stop-color="#fdcf4b" stop-opacity="0.13"/>
+      <stop offset="1" stop-color="#fdcf4b" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#nt-bg)"/>
+  <rect width="800" height="500" fill="url(#nt-glow)"/>
+
+  <!-- one world, one platform: longitude arcs converging -->
+  <g fill="none" stroke="#e8f2ee" stroke-opacity="0.25" stroke-width="1.6">
+    <circle cx="400" cy="250" r="170"/>
+    <ellipse cx="400" cy="250" rx="110" ry="170"/>
+    <ellipse cx="400" cy="250" rx="48" ry="170"/>
+    <line x1="230" y1="250" x2="570" y2="250"/>
+    <path d="M254 165 a 200 200 0 0 1 292 0"/>
+    <path d="M254 335 a 200 200 0 0 0 292 0"/>
+  </g>
+
+  <!-- regional sites, unified -->
+  <g fill="#fdcf4b">
+    <circle cx="400" cy="80" r="7"/>
+    <circle cx="296" cy="170" r="5.5"/>
+    <circle cx="510" cy="190" r="5.5"/>
+    <circle cx="352" cy="318" r="5.5"/>
+    <circle cx="488" cy="332" r="5.5"/>
+  </g>
+  <g stroke="#fdcf4b" stroke-opacity="0.4" stroke-width="1.4">
+    <line x1="400" y1="80" x2="296" y2="170"/>
+    <line x1="400" y1="80" x2="510" y2="190"/>
+    <line x1="296" y1="170" x2="352" y2="318"/>
+    <line x1="510" y1="190" x2="488" y2="332"/>
+  </g>
+
+  <!-- institutional ground -->
+  <line x1="140" y1="452" x2="660" y2="452" stroke="#e8f2ee" stroke-opacity="0.3" stroke-width="2"/>
+  <g stroke="#e8f2ee" stroke-opacity="0.18" stroke-width="6">
+    <line x1="250" y1="430" x2="250" y2="452"/>
+    <line x1="325" y1="430" x2="325" y2="452"/>
+    <line x1="400" y1="430" x2="400" y2="452"/>
+    <line x1="475" y1="430" x2="475" y2="452"/>
+    <line x1="550" y1="430" x2="550" y2="452"/>
+  </g>
+</svg>

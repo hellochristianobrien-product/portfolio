@@ -1,0 +1,66 @@
+# ─────────────────────────────────────────────────────────────
+# Christian O'Brien portfolio — files to keep OUT of the deploy.
+# These stay on your machine (useful for re-cropping); they just
+# don't get pushed to GitHub / served publicly.
+# ─────────────────────────────────────────────────────────────
+
+# OS junk
+.DS_Store
+
+# Source resume drops (used to write copy, not part of the site)
+*.docx
+
+# High-res source originals behind the curated images/<slug>/ sets (~100MB)
+images/*-src/
+images/*Visuals/
+images/ditto-offmenu/
+
+# Raw asset drops and source files sitting at the project root
+/Vestian Assets/
+/Rotary Assets/
+*.rtf
+Ditto-Case-Assets.png
+Remi-logo.png
+Modal.png
+Modal-1.png
+
+# Unused headshots (the live site uses headshot.jpg)
+headshot.png
+headshot copy.png
+
+# Local editor / preview tooling
+.claude/
+headshot-original.jpg
+/Siteplan/
+
+# More raw asset drops + internal working files (added at launch, July 2026)
+/Frontrun Assets/
+/Spring Assets/
+/Transactions/
+/Freedom Research Deck/
+/design-reference/
+images/Freedom Research Deck/
+images/Freedom Research Deck 2/
+images/Freedom Responsive/
+images/Glade/Scene*.png
+images/glade/Scene*.png
+images/Medline.png
+images/Freedom-compliance.jpg
+images/ControlTower-logo.png
+images/Ditto-assets.png
+
+# Internal working notes: never deploy
+CLAUDE.md
+MEMORY.md
+
+# Hidden pages: kept locally, not deployed (restore by removing these lines + git add)
+/resonant.html
+/perspectives.html
+/perspectives-ai-everyday.html
+/jellyvision.html
+images/resonant/
+images/resonant.svg
+images/jellyvision.svg
+images/logos/resonant.png
+images/logos/resonant.svg
+images/logos/Resonant-logo.png

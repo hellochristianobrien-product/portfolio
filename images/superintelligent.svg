@@ -1,0 +1,40 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Superintelligent">
+  <defs>
+    <linearGradient id="si-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#141a21"/>
+      <stop offset="1" stop-color="#0b0e13"/>
+    </linearGradient>
+    <radialGradient id="si-orb" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#9fe8e8"/>
+      <stop offset="0.45" stop-color="#5bc4c4"/>
+      <stop offset="1" stop-color="#5bc4c4" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="si-halo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#5bc4c4" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#5bc4c4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#si-bg)"/>
+
+  <!-- the spark of getting it: a luminous core -->
+  <circle cx="500" cy="210" r="190" fill="url(#si-halo)"/>
+  <circle cx="500" cy="210" r="64" fill="url(#si-orb)"/>
+
+  <!-- four-point sparks -->
+  <g fill="#9fe8e8">
+    <path d="M330 120 l7 18 18 7 -18 7 -7 18 -7 -18 -18 -7 18 -7 Z"/>
+    <path d="M636 300 l5.5 14 14 5.5 -14 5.5 -5.5 14 -5.5 -14 -14 -5.5 14 -5.5 Z" opacity="0.85"/>
+    <path d="M610 96 l4 10 10 4 -10 4 -4 10 -4 -10 -10 -4 10 -4 Z" opacity="0.7"/>
+  </g>
+
+  <!-- learning path: small steps rising toward the light -->
+  <g fill="#5bc4c4">
+    <circle cx="120" cy="394" r="5" fill-opacity="0.45"/>
+    <circle cx="190" cy="376" r="5.5" fill-opacity="0.55"/>
+    <circle cx="262" cy="352" r="6" fill-opacity="0.65"/>
+    <circle cx="334" cy="322" r="6.5" fill-opacity="0.78"/>
+    <circle cx="404" cy="286" r="7" fill-opacity="0.9"/>
+  </g>
+  <path d="M120 394 C 200 372 330 330 442 264" fill="none" stroke="#5bc4c4" stroke-opacity="0.30" stroke-width="1.6" stroke-dasharray="2 7" stroke-linecap="round"/>
+</svg>
