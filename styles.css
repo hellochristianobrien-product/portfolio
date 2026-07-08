@@ -770,3 +770,53 @@ footer { border-top: 1px solid var(--line); padding: 26px 0; }
 .resume__chips li { font-size: 12px; font-weight: 500; color: var(--ink); background: var(--accent); border-radius: 999px; padding: 4px 11px; }
 .resume__cta { display: flex; flex-wrap: wrap; gap: 10px; margin: 38px 0 0; }
 @media (max-width: 680px) { .resume__snapshot { grid-template-columns: repeat(2, 1fr); } }
+
+/* ---- Cursor "View work" pill on case cards (desktop pointer devices only).
+   Gated on hover+fine pointer, so phones/tablets never see it and keep the
+   normal tap behavior. The pill replaces the cursor over a card. ---- */
+@media (hover: hover) and (pointer: fine) {
+  .work .grid .card { cursor: none; }
+  .cursor-pill {
+    position: fixed; top: 0; left: 0; z-index: 999;
+    pointer-events: none;
+    background: var(--text); color: var(--on-dark);
+    font-size: 13px; font-weight: 600; letter-spacing: 0.01em;
+    padding: 10px 18px; border-radius: 999px; white-space: nowrap;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.6);
+    transition: opacity 0.16s ease, transform 0.16s ease;
+    will-change: left, top;
+  }
+  .cursor-pill.is-on {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+/* ---- Case-card brand reveal (desktop hover). The sandstone logo strip
+   cross-fades into a signature brand visual from that case's gallery, with a
+   slow settle-zoom. Cards without imagery (.card--invert) flip the strip to
+   charcoal instead. Touch devices keep the static strip. ---- */
+.thumb-hover { display: none; }   /* hidden by default so touch layouts never see it */
+@media (hover: hover) and (pointer: fine) {
+  .thumb-hover {
+    position: absolute; inset: 0; width: 100%; height: 100%;
+    object-fit: cover; display: block;
+    opacity: 0; transform: scale(1.08);
+    transition: opacity 0.24s ease, transform 0.6s cubic-bezier(0.2, 0.6, 0.2, 1);
+  }
+  .card--logo .thumb-logo,
+  .card--logo .thumb-lockup { transition: opacity 0.18s ease; }
+  .card--logo:hover .thumb-hover { opacity: 1; transform: scale(1); }
+  .card--logo:hover .thumb-wrap .thumb-logo,
+  .card--logo:hover .thumb-wrap .thumb-lockup { opacity: 0; }
+
+  /* logo-only cases: invert the strip to charcoal, logo to linen */
+  .card--invert .thumb-wrap { transition: background 0.24s ease; }
+  .card--invert:hover .thumb-wrap { background: var(--text); }
+  .card--invert:hover .thumb-wrap .thumb-logo,
+  .card--invert:hover .thumb-wrap .thumb-lockup { opacity: 1; }
+  .card--invert:hover .thumb-wrap .thumb-logo,
+  .card--invert:hover .thumb-wrap .thumb-mark { filter: brightness(0) invert(1); opacity: 0.95; }
+  .card--invert:hover .thumb-wrap .thumb-logo--text { color: var(--on-dark); }
+}
