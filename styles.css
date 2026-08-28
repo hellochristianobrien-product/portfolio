@@ -182,7 +182,7 @@ a { color: inherit; }
 .valtech-logo { height: 20px; width: auto; color: var(--muted); }
 .everest-wordmark { height: 0.9em; width: auto; display: inline-block; vertical-align: middle; }
 .company__note { font-size: 14.5px; color: var(--muted); margin: 0; max-width: 40ch; text-align: right; }
-@media (max-width: 640px) { .company__note, .subcat__note { text-align: left; } }
+@media (max-width: 640px) { .company__note { text-align: left; } }
 
 /* case grid */
 .grid {
@@ -253,12 +253,15 @@ a { color: inherit; }
 
 /* internal-products subcategory inside a company section */
 .subcat { margin-top: 46px; }
+/* a subcat leading a company section sits under the head's own spacing */
+.company__head + .subcat { margin-top: 0; }
 .subcat__head {
   display: flex; align-items: baseline; justify-content: space-between;
   flex-wrap: wrap; gap: 10px; margin-bottom: 22px;
 }
 .subcat__title { font-size: 19px; font-weight: 600; letter-spacing: -0.01em; margin: 0; }
 .subcat__note { font-size: 14.5px; color: var(--muted); margin: 0; max-width: 40ch; text-align: right; }
+@media (max-width: 640px) { .subcat__note { text-align: left; } }
 
 /* client ticker: brands scroll left-to-right, pause on hover */
 .ticker-label {
