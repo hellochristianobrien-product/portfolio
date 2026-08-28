@@ -150,7 +150,9 @@ a { color: inherit; }
 }
 .stage:hover { border-color: #c7bba2; }
 .stage__inner { position: relative; z-index: 1; flex: 1; display: flex; flex-direction: column; }
-.stage__num { font-size: clamp(42px, 6vw, 58px); font-weight: 600; letter-spacing: -0.03em; line-height: 1; color: var(--text); }
+/* margin-top:auto pins the number to the bottom of the card, so all three line
+   up even when a role title wraps to two lines */
+.stage__num { font-size: clamp(42px, 6vw, 58px); font-weight: 600; letter-spacing: -0.03em; line-height: 1; color: var(--text); margin-top: auto; }
 .stage__numlabel { font-size: 13px; color: var(--muted); margin: 5px 0 0; }
 .stage__co { font-size: 18px; font-weight: 600; margin: 0 0 2px; }
 .stage__co small { color: var(--faint); font-weight: 400; font-size: 12px; }
